@@ -27,3 +27,9 @@ def main():
 
 if __name__ == "__main__":
     # Call the main function.
+    balance = float(input("\nWhat is your savings account balance? "))
+    print("\nYou entered:", balance)
+    interest_rate = float(input("\nPlease enter your bank's APR: "))
+    print("\nYou entered:", interest_rate)
+    months = float(input("\nHow many months do you intend to save for? "))
+    print("\nYou entered:", months)
