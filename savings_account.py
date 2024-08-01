@@ -18,7 +18,7 @@ def create_savings_account(balance, interest_rate, months):
     # ADD YOUR CODE HERE
 
     
-    savings_account = Account(balance,interest_rate)
+    savings_account = Account(balance,0)
 
     # Calculate interest earned
      # ADD YOUR CODE HERE
