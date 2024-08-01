@@ -11,28 +11,34 @@ def main():
     """
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
     # ADD YOUR CODE HERE
-    balance = float(input("\nWhat is your savings account balance? "))
-    print("\nYou entered:", balance)
-    interest_rate = float(input("\nPlease enter your bank's APR: "))
-    print("\nYou entered:", interest_rate)
-    months = float(input("\nHow many months do you intend to save for? "))
-    print("\nYou entered:", months)
+    savings_balance = float(input("\nWhat is your savings account balance? "))
+    print("\nYou entered:", savings_balance)
+    savings_interest = float(input("\nPlease enter your bank's APR: "))
+    print("\nYou entered:", savings_interest)
+    savings_maturity = float(input("\nHow many months do you intend to save for? "))
+    print("\nYou entered:", savings_maturity)
 
     # Call the create_savings_account function and pass the variables from the user.
     updated_savings_balance, interest_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
+    print(f'\nYour updated savings account balance is: ${updated_savings_balance} with your earned interest rate of {interest_earned} for {savings_maturity} months')
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
-
+    cd_balance = float(input("\nWhat is your CD account balance? "))
+    print("\nYou entered:", cd_balance)
+    cd_interest = float(input("\nPlease enter your CD bank's APR: "))
+    print("\nYou entered:", cd_interest)
+    cd_maturity = float(input("\nHow many months do you intend to save for in the CD account? "))
+    print("\nYou entered:", cd_maturity)
     # Call the create_cd_account function and pass the variables from the user.
     updated_cd_balance, interest_earned = create_cd_account(cd_balance, cd_interest, cd_maturity)
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-
+    print(f'\nYour updated CD account balance is: ${updated_cd_balance} with your earned interest rate of {interest_earned} for {cd_maturity} months')
 
     # Call the main function.
 if __name__ == "__main__":
